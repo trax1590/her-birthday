@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown to Your 24th Birthday 💖</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin-top: 25px;
+  font-size: 2.4rem;
+}
+
+.message {
+  margin: 20px auto;
+  max-width: 90%;
+  font-size: 1.2rem;
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.time-box {
+  padding: 14px;
+  border-radius: 16px;
+  min-width: 80px;
+  background: linear-gradient(135deg, #000080, #A8DCAB);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.time-box:nth-child(2) {
+  background: linear-gradient(135deg, #000080, #FFFFFF);
+}
+
+.time-box:nth-child(3) {
+  background: linear-gradient(135deg, #000080, #FFEE8C);
+}
+
+.time-box:nth-child(4) {
+  background: linear-gradient(135deg, #000080, #EFBF04);
+}
+
+.time-box span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.gallery {
+  width: 90%;
+  max-width: 350px;
+  margin: 25px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.gallery img {
+  width: 100%;
+  display: none;
+}
+
+.gallery img.active {
+  display: block;
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#surpriseBtn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  background: #ff4f81;
+  color: white;
+  margin: 20px;
+  cursor: not-allowed;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#surpriseMessage {
+  display: none;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp 6s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  0% {transform: translateY(0); opacity: 0;}
+  10% {opacity: 1;}
+  100% {transform: translateY(-120vh); opacity: 0;}
+}
+
+footer {
+  margin: 30px 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="color: #A0522D;">🎉 Countdown to Your 24th Birthday Babygurl 💖</h1>
+
+<div class="message">
+<p style="color:#341539; class="intro">LET ME INTRODUCE YOU TO THE BEST THING HAPPENED TO ME THIS YEAR: <br>
+    <span>IT’S YOU</span> 🌻</p>
+<p style="color:#FF0000; class="love-text">To my babygurl, every second closer to your birthday makes my heart happier… 💕✨</p>
+</div>
+
+<div id="countdown">
+  <div class="time-box"><span id="days">0</span>Days</div>
+  <div class="time-box"><span id="hours">0</span>Hours</div>
+  <div class="time-box"><span id="minutes">0</span>Minutes</div>
+  <div class="time-box"><span id="seconds">0</span>Seconds</div>
+</div>
+
+<div class="gallery">
+  <img src="images/1.jpeg" class="active">
+  <img src="images/2.jpeg">
+  <img src="images/3.jpeg">
+  <img src="images/4.jpeg">
+  <img src="images/5.jpeg">
+  <img src="images/6.jpeg">
+  <img src="images/7.jpeg">
+  <img src="images/8.jpeg">
+<img src="images/9.jpeg">
+<img src="images/10.jpeg">
+</div>
+
+<button id="surpriseBtn">🎁 Here's a note for you 💖</button>
+
+<div id="surpriseMessage">
+ <body style="background-color:#fff5f8; font-family: 'Segoe UI', sans-serif; line-height:1.6;">
+
+  <p style="color:#ff4d6d; font-size:24px; font-weight:bold;">
+    🎉💖 Happiest 24th Birthday, my babygurl! 🎂✨
+  </p>
+  <p style="color:#c9184a; font-size:18px">
+    You’re my most beautiful blessing 🥹💝
+  </p>
+  <p style="color:#c9184a; font-size:18px">
+    You make my heart happier than I ever knew was possible 💕
+  </p>
+  <p style="color:#c9184a; font-size:18px">
+    The best part of this year was becoming <em>your</em> boyfriend 💞
+  </p>
+  <p style="color:#c9184a; font-size:18px">
+    My world shines brighter because of you, and I’m so grateful you came into my life ✨🌍
+  </p>
+  <p style="color:#c9184a; font-size:18px">
+    You don’t calm the storm… you make me forget it even exists 🌊💫
+  </p>
+  <p style="color:#c9184a; font-size:18px">
+    Thank you for caring, understanding, listening, always being there,  
+    and choosing <strong>us</strong> 🤍🫶
+  </p>
+  <p style="color:#c9184a; font-size:18px">
+    You’re right—you’ve filled my life with colors 🌈
+  </p>
+  <p style="color:#c9184a; font-size:20px; font-weight:bold;">
+    iloveyousomuch 💕🥰
+  </p>
+</div>
+
+<audio autoplay loop>
+  <source src="bollywood-song.mp3" type="audio/mpeg">
+</audio>
+
+<footer>
+Made with lots of love by Siddhu❤️🎈
+</footer>
+
+<script>
+// 🎂 BIRTHDAY DATE
+const birthday = new Date("Jan 01, 2026 00:00:00").getTime();
+
+const btn = document.getElementById("surpriseBtn");
+const msg = document.getElementById("surpriseMessage");
+
+setInterval(() => {
+  const now = new Date().getTime();
+  const diff = birthday - now;
+
+  if (diff <= 0) {
+    btn.disabled = false;
+    btn.style.cursor = "pointer";
+    btn.innerText = "🎉 Open Your Note 💝";
+  }
+
+  document.getElementById("days").innerText =
+    Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
+  document.getElementById("hours").innerText =
+    Math.max(0, Math.floor((diff / (1000 * 60 * 60)) % 24));
+  document.getElementById("minutes").innerText =
+    Math.max(0, Math.floor((diff / (1000 * 60)) % 60));
+  document.getElementById("seconds").innerText =
+    Math.max(0, Math.floor((diff / 1000) % 60));
+}, 1000);
+
+// 🎁 Surprise click
+btn.onclick = () => {
+  msg.style.display = "block";
+
+  for (let i = 0; i < 60; i++) {
+    const heart = document.createElement("div");
+    heart.innerText = "🎆💖🎉";
+    heart.style.position = "fixed";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.top = "100vh";
+    heart.style.fontSize = "24px";
+    heart.style.animation = "floatUp 4s linear";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 4000);
+  }
+};
+
+// 🖼️ Slideshow
+let index = 0;
+const images = document.querySelectorAll(".gallery img");
+setInterval(() => {
+  images[index].classList.remove("active");
+  index = (index + 1) % images.length;
+  images[index].classList.add("active");
+}, 3000);
+
+// 💖 Floating hearts always
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerText = "💖";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 7000);
+}, 600);
+</script>
+
+</body>
+</html>

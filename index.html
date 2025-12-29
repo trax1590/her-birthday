@@ -191,7 +191,7 @@ footer {
   </p>
 </div>
 
-<audio id="bgMusic" autoplay loop muted playsinline>
+<audio>
   <source src="bollywood-song.mp3" type="audio/mpeg">
 </audio>
 
@@ -263,25 +263,9 @@ setInterval(() => {
   setTimeout(() => heart.remove(), 7000);
 }, 600);
   
-  const music = document.getElementById("bgMusic");
-
-// Unmute music on first user interaction anywhere
-function enableSound() {
-  music.muted = false;
-  music.volume = 0.8;
-
-  document.removeEventListener("click", enableSound);
-  document.removeEventListener("touchstart", enableSound);
-  document.removeEventListener("scroll", enableSound);
-}
-
-// Listen for ANY interaction
-document.addEventListener("click", enableSound);
-document.addEventListener("touchstart", enableSound);
-document.addEventListener("scroll", enableSound);
-
 </script>
 
 </body>
 </html>
+
 
